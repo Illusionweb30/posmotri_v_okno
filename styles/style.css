@@ -148,7 +148,6 @@ ol {
 .search-form__pseudo-checkbox {
   display: flex;
   align-items: center;
-
   align-content: center;
   width: 19px;
   height: 19px;
@@ -156,7 +155,7 @@ ol {
   border: 1px solid #fff;
 }
 
-.search-form__chekbox:checked + .search-form__pseudo-checkbox {
+input[type='checkbox']:checked + .search-form__pseudo-checkbox {
   display: flex;
   width: 15px;
   height: 15px;
@@ -219,6 +218,7 @@ ol {
   text-transform: uppercase;
 }
 
+
 .content__accent {
   color: #545050;
 }
@@ -254,7 +254,8 @@ ol {
 }
 
 .content__list-item:has(:focus-visible) {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: 0;
 }
 
 .content__card-link {
