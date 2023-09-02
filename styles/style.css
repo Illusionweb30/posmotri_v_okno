@@ -72,6 +72,10 @@ ol {
   align-items: flex-start;
 }
 
+.search-form__fieldset:nth-child(2) {
+  margin-left: 30px;
+}
+
 .search-form__fieldset-title {
   font-size: 18px;
   font-style: normal;
@@ -83,8 +87,8 @@ ol {
 .search-form__label {
   display: flex;
   align-items: center;
-  gap: 5px;
   cursor: pointer;
+  gap: 2px;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
@@ -97,7 +101,7 @@ ol {
 }
 
 .search-form__label-text {
-  padding-right: 15px;
+  margin-right: 10px;
 }
 
 .visually-hidden {
@@ -134,14 +138,15 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  margin-bottom: 12px;
+  margin-right: 15px;
 }
 
 .search-form__pseudo-checkbox {
   display: flex;
   align-items: center;
   align-content: center;
+  margin-right: 7px;
   width: 19px;
   height: 19px;
   background-color: transparent;
@@ -168,6 +173,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
+  margin-bottom: 5px;
 }
 
 .button:active {
@@ -222,15 +228,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 .content__list-item {
   display: flex;
   flex-direction: row;
-  
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.content__list-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .content__card-link {
@@ -263,7 +264,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  /* Убрал геп, и превью встало, но Зеленоградск теперь липнет к изображению */
 }
 
 .content__video-card-description-container {
@@ -280,7 +280,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 90%;
+  line-height: 100%;
 }
 
 .content__video-card-description {
