@@ -240,13 +240,17 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   color: #fff;
 }
 
-.content__card-link:hover {
-  text-decoration: underline;
-  text-underline-position: under;
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__card-link:active {
   background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 .content__card-link:focus {
